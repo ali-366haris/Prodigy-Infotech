@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple portfolio Page for CodSoft</title>
+<style type="text/css">
+    *{padding: 0; margin:0; box-sizing:border-box;}
+    header{
+        width: 100%;
+        height: 100vh;
+       background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),
+                         url('codsoft2.jpg');    
+        background-size: cover;
+        font-family: sans-serif;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo{
+        font-size: 2em;
+        letter-spacing: 2px;
+    }
+    .logo span{
+        color: aqua;
+    }
+    .menu a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        position: relative;
+    }
+    .menu a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0%;
+    height: 100%;
+    border-bottom: 2px solid aqua;
+    transition: 0.4s linear;
+    }
+    .menu a:hover:before{
+        width: 90%;
+    }
+    .register a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        background: aqua;
+        border-radius: 8px;
+    }
+    .register a:hover{
+        background: transparent;
+        border:1px solid aqua;
+        font-weight: bold;
+    }
+    .l-txt{
+        max-width: 650px;
+        position:absolute;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%,-50%);
+        text-align: left;
+        color: white;
+    }
+    .l-txt span{
+        letter-spacing: 5px;
+    }
+    .l-txt h1{
+        font-size: 3.5em;
+    }
+    .l-txt a{
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 20px;
+        background:  aqua;
+        border-radius: 8px;
+        letter-spacing: 5px;
+    }
+    .l-txt a:hover{
+        background: transparent;
+        border:1px solid aqua;
+
+    }
+    .right{
+        position: absolute;
+        top: -100%;
+        left: 200%;
+        border-radius: 50%;
+    }
+</style>
+</head>
+
+<body>
+<header>
+<nav>
+    <div class="logo">
+        My Port<span>folio</span>
+    </div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="file:///C:/Users/IT/Desktop/codsoft/portfolio%20TASK2/portfolia%20page%20navigation%202.html">Portfolio</a>
+        <a href="file:///C:/Users/IT/Desktop/codsoft/portfolio%20TASK2/portfolia%20page%20navigation%202.html">Projects</a>
+        <a href="file:///C:/Users/IT/Desktop/codsoft/portfolio%20TASK2/portfolia%20page%20navigation%202.html">Skills</a>
+        <a href="file:///C:/Users/IT/Desktop/codsoft/portfolio%20TASK2/portfolia%20page%20navigation%202.html">Contact</a>
+    </div>
+    <div class="register">
+        <a href="https://awamibazarr.pk" >Vist My Website</a> 
+        
+    </div>
+</nav>
+<section class="l-txt">
+<span>I am a </span>
+<h1>Web Developer</h1>
+
+<br>
+<a href="file:///D:/uni%20stuff/8th%20sem/PP/Grey%20_%20White%20Clean%20Cv%20Resume.pdf" >Download CV</a>
+<div class="right">
+    <img src="D:\uni stuff\7th sem\bossy\my pics\IMG_20230223_171924_965.jpg" width ="500">
+</div>
+
+</section>
+
+
+</header>
+</body>
+
+</html>
